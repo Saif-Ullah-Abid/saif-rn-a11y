@@ -1,5 +1,5 @@
 {
-  "name": "saif-rn-a11y",
+  "name": "@saif-ullah-abid/saif-rn-a11y",
   "version": "1.0.0",
   "description": "Static accessibility linter for React Native - catches WCAG contrast failures, undersized touch targets, and missing screen-reader labels at build time. No equivalent exists for RN's non-DOM component model.",
   "main": "dist/index.js",
