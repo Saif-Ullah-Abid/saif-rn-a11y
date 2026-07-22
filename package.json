@@ -1,0 +1,42 @@
+{
+  "name": "saif-rn-a11y",
+  "version": "1.0.0",
+  "description": "Static accessibility linter for React Native - catches WCAG contrast failures, undersized touch targets, and missing screen-reader labels at build time. No equivalent exists for RN's non-DOM component model.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "saif-rn-a11y": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "TS_NODE_PROJECT=tsconfig.test.json node -r ts-node/register --test tests/*.test.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react-native",
+    "accessibility",
+    "a11y",
+    "wcag",
+    "contrast",
+    "lint",
+    "static-analysis",
+    "expo"
+  ],
+  "author": "Saif Ullah Abid",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Saif-Ullah-Abid/saif-rn-a11y"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "ts-node": "^10.9.0",
+    "@types/node": "^22.0.0"
+  }
+}
